@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolution 2024 Registration</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/T-logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">TechVolution 2024 Registration</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="nonBinary" value="Non-binary">
+                    <label class="form-check-label" for="nonBinary">Non-binary</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="street">Street Address</label>
+                <input type="text" class="form-control" id="street" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select class="form-control" id="state" required>
+                    <option value="">Select State</option>
+                    <option value="State1">State1</option>
+                    <option value="State2">State2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" class="form-control" id="zip" required>
+            </div>
+            <div class="form-group">
+                <label for="preferences">Event Preferences</label>
+                <select class="form-control" id="preferences" multiple>
+                    <option value="Preference1">Preference1</option>
+                    <option value="Preference2">Preference2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dietary">Dietary Restrictions</label>
+                <textarea class="form-control" id="dietary" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tshirt">T-shirt Size</label>
+                <select class="form-control" id="tshirt" required>
+                    <option value="">Select Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger">Register</button>
+        </form>
+        <div class="toast" id="successToast" style="position: absolute; top: 1000px; right: 10px;">
+            <div class="toast-header">
+                <strong class="mr-auto">Success</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                Registration successful!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
